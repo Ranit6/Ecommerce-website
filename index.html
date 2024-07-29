@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Your Online Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">ShopEase</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cart">My Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="home" class="jumbotron text-center">
+        <h1>Welcome to ShopEase</h1>
+        <p>Your one-stop shop for all your needs!</p>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar text-center">
+        <input type="text" id="searchInput" placeholder="Search for products or categories..." class="form-control d-inline-block" style="width: 300px;">
+        <button id="searchButton" class="btn btn-primary">Search</button>
+    </div>
+
+    <!-- Product Sections -->
+    <div id="products" class="container">
+        <!-- Electronics Section -->
+        <h2 class="section-title">Electronics</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/laptop.jpg" class="card-img-top" alt="Laptop">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop</h5>
+                        <p class="card-text">₹49999</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Laptop" data-price="49999">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/smartphone.jpg" class="card-img-top" alt="Phone">
+                    <div class="card-body">
+                        <h5 class="card-title">Smartphone</h5>
+                        <p class="card-text">₹14999</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Smartphone" data-price="14999">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/headphone.jpg" class="card-img-top" alt="Headphones">
+                    <div class="card-body">
+                        <h5 class="card-title">Headphones</h5>
+                        <p class="card-text">₹3999</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Headphones" data-price="3999">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clothing Section -->
+        <h2 class="section-title">Clothing</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/tshirt.jpg" class="card-img-top" alt="T-Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">T-Shirt</h5>
+                        <p class="card-text">₹729</p>
+                        <button class="btn btn-primary add-to-cart" data-name="T-Shirt" data-price="729">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/jeans.jpg" class="card-img-top" alt="Jeans">
+                    <div class="card-body">
+                        <h5 class="card-title">Jeans</h5>
+                        <p class="card-text">₹949</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Jeans" data-price="949">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/jacket.jpg" class="card-img-top" alt="Jacket">
+                    <div class="card-body">
+                        <h5 class="card-title">Jacket</h5>
+                        <p class="card-text">₹1999</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Jacket" data-price="1999">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Home Appliances Section -->
+        <h2 class="section-title">Home Appliances</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/refrigerator.jpg" class="card-img-top" alt="Refrigerator">
+                    <div class="card-body">
+                        <h5 class="card-title">Refrigerator</h5>
+                        <p class="card-text">₹25999</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Refrigerator" data-price="25999">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/Washing Machine.jpg" class="card-img-top" alt="Washing Machine">
+                    <div class="card-body">
+                        <h5 class="card-title">Washing Machine</h5>
+                        <p class="card-text">₹14999</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Washing Machine" data-price="14999">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/microwave.jpg" class="card-img-top" alt="Microwave">
+                    <div class="card-body">
+                        <h5 class="card-title">Microwave</h5>
+                        <p class="card-text">₹6999</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Microwave" data-price="6999">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sports Section -->
+        <h2 class="section-title">Sports</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/cricket bat.jpg" class="card-img-top" alt="Cricket Bat">
+                    <div class="card-body">
+                        <h5 class="card-title">Cricket Bat</h5>
+                        <p class="card-text">₹1229</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Cricket Bat" data-price="1229">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/football.jpg" class="card-img-top" alt="Football">
+                    <div class="card-body">
+                        <h5 class="card-title">Football</h5>
+                        <p class="card-text">₹999</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Football" data-price="999">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="images/tennis racket.jpg" class="card-img-top" alt="Tennis Racket">
+                    <div class="card-body">
+                        <h5 class="card-title">Tennis Racket</h5>
+                        <p class="card-text">₹379</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Tennis Racket" data-price="379">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Cart Section -->
+    <div id="cart" class="container">
+        <h2 class="section-title">My Cart</h2>
+        <div class="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer bg-light text-center">
+        <p>&copy; 2024 ShopEase. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:support@shopease.com">support@shopease.com</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
+
